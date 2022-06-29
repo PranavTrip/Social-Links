@@ -2,7 +2,7 @@ const icon_links=[
     {
         id:1,
         name:"Mail",
-        link:"https://mailto:pranavtri00@gmail.com",
+        link:"mailto:pranavtri00@gmail.com",
         icon:<i class="fa-regular fa-envelope"></i>
     },
     {
