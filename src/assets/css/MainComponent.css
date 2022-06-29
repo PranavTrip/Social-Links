@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    background: url(/public/images/background.webp) no-repeat center center fixed;
+    background-size: 100% 100%;
+    /* display: block; */
+    width: 100vw;
+    height: 100%;
+}
+
+.image-container img {
+    max-width: 100px;
+    max-height: 100px;
+    height: calc(10vh + 10vw - 2vmax);
+    width: calc(10vh + 10vw - 2vmax);
+    /* margin-top:10rem ; */
+    text-align: center;
+    border-radius: 50%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondary-container {
+    padding-top: 5rem;
+    /* background-color: transparent; */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-heading {
+    margin-top: 16px;
+    font-size: calc(2vw + 2vh - 1vmin);
+    /* -webkit-text-size-adjust: none; */
+    /* text-size-adjust: 100%; */
+    font-weight: 400;
+    color: #CEEDFF;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+}
+
+.icon-inner-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: center;
+    margin: 1rem 5px 1rem 5px;
+    align-items: center;
+}
+
+.icon-link {
+    font-size: calc(3vw + 3vh - 2vmin);
+    color: #CEEDFF;
+}
+
+@media (max-width:150px) {
+    .icon-container{
+        flex-direction: column;
+    }
+}
+
+
+/* Badges CSS */
+
+.badges-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-inner-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    margin: 1rem 5px 1rem 5px;
+    align-items: center;
+}
+.badge-link{
+    display: flex;
+    /* width: 500px; */
+    height: -moz-fit-content;
+    /* height: fit-content; */
+    /* border: 1px solid black; */
+    align-content: center;
+    align-items: center;
+
+}
+.badge-image{
+    width: 43px;
+    height: 43px;
+}
+.badge-heading{
+    text-align: center;
+    color: #CEEDFF;
+    width: 100%;
+    text-decoration: none;
+}
+.badges{
+    display: flex;
+    height: fit-content;
+    width: 500px;
+    border: 1px solid black;
+}

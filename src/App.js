@@ -1,9 +1,12 @@
 import './App.css';
+// import Badges from './components/Badges';
+import MainComponent from './components/MainComponent';
 
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <MainComponent />
+      {/* <Badges /> */}
     </>
   );
 }
