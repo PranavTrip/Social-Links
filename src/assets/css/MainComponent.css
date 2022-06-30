@@ -5,7 +5,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     height: 100vh;
     width: 100vw;
 }
@@ -82,7 +83,7 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width:150px) {
-    .icon-container{
+    .icon-container {
         flex-direction: column;
     }
 }
@@ -90,7 +91,7 @@ body::-webkit-scrollbar {
 
 /* Badges CSS */
 
-.badges-container{
+.badges-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -99,37 +100,62 @@ body::-webkit-scrollbar {
     align-items: center;
 }
 
-.badge-inner-container{
+.badge-inner-container {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-content: center;
     margin: 1rem 5px 1rem 5px;
     align-items: center;
+    border-radius: 30px;
+    /* border: 1px solid red; */
 }
-.badge-link{
+
+.badge-link {
     display: flex;
-    /* width: 500px; */
-    height: -moz-fit-content;
-    /* height: fit-content; */
-    /* border: 1px solid black; */
+    width: 100%;
+    height: fit-content;
     align-content: center;
     align-items: center;
+    padding: 10px;
+    text-decoration: none;
+}
 
+.badge-image {
+    width: calc(3vh + 3vw);
+    height: calc(3vh + 3vw );
+    font-size: calc(3vh + 3vw);
 }
-.badge-image{
-    width: 43px;
-    height: 43px;
-}
-.badge-heading{
+
+.badge-heading {
+    font-size: calc(2vw + 2vh - 1vmax);
     text-align: center;
     color: #CEEDFF;
     width: 100%;
     text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
 }
-.badges{
+
+.badges {
+    text-align: center;
     display: flex;
     height: fit-content;
-    width: 500px;
-    border: 1px solid black;
+    width: 65vw;
+    min-width: 200px;
+    border: 0px solid #FFFFFF;
+    background-color: rgba(196, 196, 196, 0.01);
+    border-radius: 30px;
+    /* opacity: 0.5; */
+    box-shadow: inset 0px 17.7895px 25.5438px -16.421px rgb(255 255 255 / 50%), inset 0px -5.92982px 4.10526px -6.38596px rgb(255 255 255 / 75%), inset 0px 3.19298px 5.01754px -1.82456px #ffffff, inset 0px -37.4035px 31.0175px -29.193px rgb(96 68 145 / 30%), inset 0px 44.7017px 45.614px -21.8947px rgb(202 172 255 / 30%), inset 0px 1.82456px 8.21052px rgb(154 146 210 / 30%), inset 0px 0.45614px 18.2456px rgb(227 222 255 / 20%);
+    backdrop-filter: blur(45.614px);
+ 
+}
+@media(max-width:220px){
+    .badge-link{
+        flex-direction: column;
+    }
+    .badges{
+        width:10vw;
+    }
 }
