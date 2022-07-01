@@ -9,7 +9,7 @@ const MainComponent = () => {
       <div className="container">
         <div className="secondary-container">
           <div className="image-container">
-            <img src="/images/display.jpg" alt="Display Image" />
+            <img src={process.env.PUBLIC_URL + "/images/display.jpg"} alt="Display" />
           </div>
           <h4 className="name-heading">PRANAV TRIPATHI</h4>
           <div className="icon-container">
@@ -31,7 +31,7 @@ const MainComponent = () => {
                 <div className="badge-inner-container" key={id}>
                   <div className="badges">
                     <a href={link} className="badge-link">
-                      <img src={image} alt={name} className="badge-image" />
+                      <img src={process.env.PUBLIC_URL + image} alt={name} className="badge-image" />
                       <h3 className="badge-heading">{name}</h3>
                     </a>
                   </div>
