@@ -9,7 +9,7 @@ const MainComponent = () => {
       <div className="container">
         <div className="secondary-container">
           <div className="image-container">
-            <img src={process.env.PUBLIC_URL + "/images/display.jpg"} alt="Display" />
+            <img src={process.env.PUBLIC_URL + "/images/pranav1.jpeg"} alt="Display" />
           </div>
           <h4 className="name-heading">PRANAV TRIPATHI</h4>
           <div className="icon-container">
