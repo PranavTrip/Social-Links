@@ -32,7 +32,7 @@ const badge_links=[
     {
         id:6,
         name:"WhatsApp",
-        link:"https://wa.me/8874892149",
+        link:"https://wa.me/+918874892149",
         image:"/GIFs/WhatsApp.gif"
     },
 ]
